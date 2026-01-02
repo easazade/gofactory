@@ -11,6 +11,10 @@ My Golang playground
 1. Each file should specify which package it belongs to at the top
 1. All files in the same package/directory are compiled together as if they were concatenated
 1. All the files in a directory should have the same package name
+
+### Run/Build/Compilation
+
+1. Same package name in different directories = different packages. Only files in the same directory get compiled together.
 1. Compilation happens per package (per directory) so if multiple directories have same package name (eg: main) they are actually different packages and they will not merge in compilation and different binaries will be produced
 
 # Commands
