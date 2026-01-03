@@ -80,7 +80,7 @@ Add, Remove, Upgrade, Downgrade of dependencies is done by `go get` command.
 
 `go mod` handles tasks regarding modules/dependencies.
 
-- `go mod tidy` adds missing and removes unused modules
+`go mod tidy` adds missing and removes unused modules. It is possible to just add an import into a file and just call `tidy` command to handle the rest.
 
 ##### Local dependencies
 
