@@ -11,6 +11,11 @@ My Golang playground
 1. Each file should specify which package it belongs to at the top
 1. All files in the same package/directory are compiled together as if they were concatenated
 1. All the files in a directory should have the same package name
+1. Types, functions, fields, structs that are capitalized are public and lowercased ones are private
+1. Methods are just functions with a receiver. No inheritance. No `this` keyword
+1. Interfaces describe behavior. Structs happen to satisfy it. No `implements` keyword
+1. Types don’t declare what they are. They prove it by behavior
+1. exported/unexported are used instead of public/private because it's actually package-level visibility not object-level
 
 ### Run/Build/Compilation
 
@@ -28,6 +33,9 @@ The convention for the unique path used for the module:
 1. Personal projects: `github.com/you/project`
 1. Companies: `company.tld/team/service`
 1. Throwaway code: `foo/bar`
+
+`god mod init` actually enables dependency tracking and everything module related. It is possible to just run a go files without a `go.mod` file
+But you won't get very far. You need to only use standard library (stdlib) and everything needs to be in the main package
 
 ### Dependencies
 
