@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
-import "rsc.io/quote/v4"
-import "examples.ali.com/greetings"
+import (
+	"fmt"
+
+	"examples.ali.com/greetings"
+	"rsc.io/quote/v4"
+)
 
 func main() {
 	fmt.Println("Hello World!")
